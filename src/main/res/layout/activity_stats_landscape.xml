@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kaique.portalhunters.StatsActivity"
+    android:background="@drawable/bg1_vert"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:src="@mipmap/ic_docs"
+            android:id="@+id/imgDoc"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Name: \nSex:\nLevel: \nXP: "
+            android:id="@+id/StatsName"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgDoc"
+            android:layout_toEndOf="@+id/imgDoc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_marginRight="32dp"
+            android:src="@mipmap/ic_hp"
+            android:id="@+id/imgHP"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="HP: "
+            android:id="@+id/StatsHP"
+            android:layout_below="@+id/imgHP"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_marginRight="32dp"
+            android:src="@mipmap/ic_mp"
+            android:id="@+id/imgMP"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgHP"
+            android:layout_toEndOf="@+id/imgHP" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MP: "
+            android:id="@+id/StatsMP"
+            android:layout_below="@+id/imgCR"
+            android:layout_alignLeft="@+id/imgMP"
+            android:layout_alignStart="@+id/imgMP" />
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_marginRight="32dp"
+            android:src="@mipmap/ic_crystal"
+            android:id="@+id/imgCR"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgMP"
+            android:layout_toEndOf="@+id/imgMP" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="CR: "
+            android:id="@+id/StatsCR"
+            android:layout_below="@+id/imgCR"
+            android:layout_alignLeft="@+id/imgCR"
+            android:layout_alignStart="@+id/imgCR" />
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:src="@mipmap/ic_magic_power"
+            android:id="@+id/imgMAG"
+            android:layout_toRightOf="@+id/imgCR"
+            android:layout_toEndOf="@+id/imgCR" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MAG: "
+            android:id="@+id/StatsMAG"
+            android:layout_below="@+id/imgMAG"
+            android:layout_alignLeft="@+id/imgMAG"
+            android:layout_alignStart="@+id/imgMAG" />
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_marginRight="32dp"
+            android:src="@mipmap/ic_sword_axe"
+            android:id="@+id/imgSTR"
+            android:layout_below="@+id/StatsHP"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="STR: "
+            android:id="@+id/StatsSTR"
+            android:layout_below="@+id/imgSTR"
+            android:layout_alignLeft="@+id/imgSTR"
+            android:layout_alignStart="@+id/imgSTR" />
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_marginRight="32dp"
+            android:src="@mipmap/ic_boot"
+            android:id="@+id/imgAGI"
+            android:layout_below="@+id/StatsHP"
+            android:layout_toRightOf="@+id/imgSTR"
+            android:layout_toEndOf="@+id/imgSTR" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="AGI: "
+            android:id="@+id/StatsAGI"
+            android:layout_below="@+id/imgAGI"
+            android:layout_alignLeft="@+id/imgAGI"
+            android:layout_alignStart="@+id/imgAGI" />
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_marginRight="32dp"
+            android:src="@mipmap/ic_armor"
+            android:id="@+id/imgRES"
+            android:layout_below="@+id/StatsHP"
+            android:layout_toEndOf="@+id/imgAGI"
+            android:layout_toRightOf="@+id/imgAGI" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="RES: "
+            android:id="@+id/StatsRES"
+            android:layout_below="@+id/imgRES"
+            android:layout_alignLeft="@+id/imgRES"
+            android:layout_alignStart="@+id/imgRES" />
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:src="@mipmap/ic_luck"
+            android:id="@+id/imgLCK"
+            android:layout_above="@id/StatsRES"
+            android:layout_toRightOf="@+id/imgRES"
+            android:layout_toEndOf="@+id/imgRES" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="LCK: "
+            android:id="@+id/StatsLCK"
+            android:layout_below="@+id/imgLCK"
+            android:layout_alignLeft="@+id/imgLCK"
+            android:layout_alignStart="@+id/imgLCK" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

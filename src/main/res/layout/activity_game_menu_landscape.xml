@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kaique.portalhunters.GameMenuActivity"
+    android:background="@drawable/bg1_vert"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:id="@+id/GameHeroImage"
+            android:src="@mipmap/ic_fight"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0/0"
+            android:id="@+id/GameTextXP"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="NAME"
+            android:id="@+id/GameTextName"
+            android:layout_above="@+id/GameTextXP"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:text=""
+            android:id="@+id/btStats"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp"
+            android:onClick="clickStats"
+            android:background="@mipmap/ic_stats"
+            style="?attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:text=""
+            android:id="@+id/btStore"
+            android:layout_above="@+id/btStats"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="clickStore"
+            android:background="@mipmap/ic_store"
+            style="?attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:text=""
+            android:id="@+id/btFight"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="clickFight"
+            android:background="@mipmap/ic_fight"
+            style="?attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:text=""
+            android:id="@+id/btMap"
+            android:layout_above="@+id/btFight"
+            android:layout_alignLeft="@+id/btFight"
+            android:layout_alignStart="@+id/btFight"
+            android:onClick="clickMap"
+            android:background="@mipmap/ic_map"
+            style="?attr/borderlessButtonStyle"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
